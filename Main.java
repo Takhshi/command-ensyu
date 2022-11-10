@@ -5,12 +5,17 @@ public class Main{
 		Scanner sc = new Scanner(System.in);
 		
 		System.out.print("height(m):");
-		double height = sc.nextDouble();
+		double height1 = sc.nextDouble();
 		System.out.print("weight(kg):");
-		double weight = sc.nextDouble();
+		double weight1 = sc.nextDouble();
+                double bmi1 = weight1 / (height1 * height1);
+		System.out.println("1人目のBMI:"+((double)Math.round(bmi1 * 100))/100);
 
-                double bmi = weight / (height * height);
-
-                System.out.println("BMI:"+((double)Math.round(bmi * 100))/100);
+                System.out.print("height(m):");
+                double height2 = sc.nextDouble();
+                System.out.print("weight(kg):");
+                double weight2 = sc.nextDouble();
+		double bmi2 = weight2 / (height2 * height2);
+		System.out.println("2人目のBMI:"+((double)Math.round(bmi2 * 100))/100);
 	}
 }
